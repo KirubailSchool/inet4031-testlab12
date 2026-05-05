@@ -19,30 +19,22 @@ The application code and scaffolding are provided. Your job is to complete the D
 
 # Project Overview
 
-<!-- Briefly describe what this application does in your own words.
-     What problem does it solve? What does a user interact with? -->
+This project is a three-tier web application using Docker. It includes Apache as the web server, Flask as the backend, and MariaDB as the database. These services work together to handle requests and store data. Users interact with the website through the browser.
 
 # Prerequisites
 
-<!-- List what needs to be installed or configured on the VM before this lab
-     will work. Include Docker, Docker Compose, and anything else required. -->
+Docker and Docker Compose must be installed on the VM. You also need access to a Linux terminal or server. The project files must be cloned from GitHub. No other special setup is required.
 
 # Getting Started
 
-<!-- Explain how a new teammate would bring this stack up from a fresh clone.
-     Walk through every command they need to run, in order. -->
+First, clone the repository to your machine. Go into the project folder using cd. Run docker compose up --build to start all services. Then open the browser to access the application.
 
 # Configuration
 
-<!-- Explain the .env file: what it is, what variables it contains,
-     and what a teammate needs to provide that is not in this repository. -->
+The .env file stores important settings like database name, user, and password. These values are used by both Flask and MariaDB. You do not hardcode sensitive data in the files. Each teammate may need to adjust these values if needed.
 
 # Verification
 
-<!-- Describe how to confirm the stack is running correctly.
-     Reference the check script and what a passing run looks like. -->
+Run the check-lab.sh script to test if everything is working. If all checks pass, you will see “PASS” for each service. You can also open the website in a browser to confirm it loads. All services (db, app, web) should be healthy.
 
-# Feedback (Optional)
-
-<!-- Do you have any feedback you would like to give us after completing this lab? What are some things you enjoyed? What about others that you felt was lackluster? Or maybe there was something that we missed that you'd love for us to touch on! This will help us improve the INET 4031 lab experience. We appreciate everything we can get!  -->
 
